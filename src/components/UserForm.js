@@ -1,6 +1,10 @@
 import React from 'react';
-import FormUserDetails from "./FormUserDetails.js"
-import FormPersonalDetails from "./FormPersonalDetails.js"
+import FormUserDetails from "./FormUserDetails"
+import FormPersonalDetails from "./FormPersonalDetails"
+import Confirm from "./Confirm"
+import Success from "./Success"
+
+
 
 
 
@@ -84,9 +88,16 @@ import FormPersonalDetails from "./FormPersonalDetails.js"
         />)
 
       case 3:
-        return <h2>Confirm</h2>
-      case 3:
-        return <h2>Success</h2>
+      return (
+        <Confirm
+          nextStep={this.nextStep}
+          prevStep={this.prevStep}
+          values={values}
+        />)
+      case 4:
+        return(
+          <Success/>
+        )
     }
   }
 }

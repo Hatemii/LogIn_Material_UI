@@ -65,19 +65,19 @@ export default class FormPersonalDetails extends React.Component {
           <br/>
 
         <RaisedButton
-          label = "Continue"
-          primary={true}
-          style={styles.button}
-          onClick={this.continue}
-          />
-
-        <RaisedButton
           label = "back"
           primary={false}
           style={styles.button}
           onClick={this.back}
           />
 
+
+        <RaisedButton
+          label = "Continue"
+          primary={true}
+          style={styles.button}
+          onClick={this.continue}
+          />
 
       </React.Fragment>
     </MuiThemeProvider>)
