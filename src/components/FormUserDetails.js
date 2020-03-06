@@ -30,7 +30,7 @@ export default class FormUserDetails extends React.Component {
       <MuiThemeProvider>
         <React.Fragment>
 
-        <AppBar title="Enter User Detail"/>
+        <AppBar title="Enter User Details"/>
 
         <TextField
           hintText="Enter your first name"

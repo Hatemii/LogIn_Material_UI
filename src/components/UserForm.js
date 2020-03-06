@@ -1,5 +1,7 @@
 import React from 'react';
 import FormUserDetails from "./FormUserDetails.js"
+import FormPersonalDetails from "./FormPersonalDetails.js"
+
 
 
 
@@ -63,10 +65,23 @@ import FormUserDetails from "./FormUserDetails.js"
     }
 
     switch (step) {
+
       case 1:
-        return (<FormUserDetails nextStep={this.nextStep} handleChanges={this.handelChanges} values={values}/>)
+        return (
+          <FormUserDetails
+            nextStep={this.nextStep}
+            handleChanges={this.handelChanges}
+            values={values}
+          />)
+
       case 2:
-        return <h2>FormUserDetails</h2>
+      return (
+        <FormPersonalDetails
+          nextStep={this.nextStep}
+          prevStep={this.prevStep}
+          handleChanges={this.handelChanges}
+          values={values}
+        />)
 
       case 3:
         return <h2>Confirm</h2>
